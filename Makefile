@@ -18,7 +18,8 @@ EXTRA_CFLAGS += -Wno-unused
 GCC_VER_49 := $(shell echo `$(CC) -dumpversion | cut -f1-2 -d.` \>= 4.9 | bc )
 
 SUBARCH := $(shell uname -m | sed -e s/i.86/i386/ | sed -e s/aarch64/arm64/ | sed -e s/ppc/powerpc/ | sed -e s/armv.l/arm/)
-ARCH ?= $(SUBARCH)
+#ARCH ?= $(SUBARCH)
+ARCH ?= arm64
 
 ifeq ($(GCC_VER_49),1)
 EXTRA_CFLAGS += -Wno-date-time	# Fix compile error && warning on gcc 4.9 and later
@@ -61,7 +62,8 @@ CONFIG_TXPWR_LIMIT_EN = n
 CONFIG_RTW_REGDB = phl
 ########################## Initial Channel Plan  ##########################
 # XX: unspecified
-CONFIG_RTW_COUNTRY_CODE = XX
+#CONFIG_RTW_COUNTRY_CODE = XX
+CONFIG_RTW_COUNTRY_CODE = US
 # 0xFFFF: unspecified
 CONFIG_RTW_CHPLAN = 0xFFFF
 # 0xFFFF: unspecified
