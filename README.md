@@ -1,6 +1,8 @@
 # rtw8852cu
 
-To install in Jetson
+## FOR TP_LINK ARCHER 50UH
+
+- To install in Linux
 
 ### Clone
 ```bash
