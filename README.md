@@ -4,7 +4,7 @@ To install in Jetson
 
 ### Clone
 ```bash
-git clone https://github.com/lwfinger/rtw8852cu
+git clone https://github.com/rtarun1/rtw8852cu
 cd rtw8852cu
 ```
 
